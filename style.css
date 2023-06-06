@@ -1,0 +1,75 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background-color: white;
+    color: black;
+}
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    padding: 15px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding-inline: 10px;
+    padding: 15px;
+    font-weight: 700;
+
+}
+nav a:hover{
+    cursor: pointer;
+    background-color: tomato;
+    transition: all .3s ease-in-out;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+
+}
+.dark{
+    background-color: black;
+    color: white;
+}
+.angry{
+    background-color: red;
+    color: white;
+}
+.happy{
+    background-color: yellow;
+    color: black;
+
+}
+.janda{
+    background-color: blueviolet;
+    color: white;
+}
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 1.2em;
+    top: 20%;
+    animation: jedagjedug .5s infinite;
+}
+
+@keyframes jedagjedug{
+    0%{
+        font-size: 1.2em;
+    }
+    50%{
+        font-size: 1.5em;
+    }
+    100%{
+        font-size: 1.2em;
+    }
+}
